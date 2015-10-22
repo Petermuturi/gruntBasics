@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: ['calc/add.js', 'calc/subtract.js', 'calc/multiply.js', 'calc/divide.js'],
+        src: 'calc/*.js',
         dest: 'calc.min.js'
       }
     }
