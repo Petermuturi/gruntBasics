@@ -3,8 +3,8 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       build: {
-        src: 'calc/add.js',
-        dest: 'add.min.js'
+        src: ['calc/add.js', 'calc/subtract.js'],
+        dest: 'addsub.min.js'
       }
     }
   });
