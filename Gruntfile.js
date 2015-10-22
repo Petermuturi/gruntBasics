@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
   	meta: {
-  		banner: '/*This is my minified app*/'
+  		banner: ' /*This is my minified app, built <%=grunt.template.today() %>*/ '
   	},
     pkg: grunt.file.readJSON('package.json'),
     uglify: {	
