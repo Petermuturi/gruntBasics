@@ -1,11 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+  	meta: {
+  		banner: '/*This is my minified app*/'
+  	},
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
+    uglify: {	
       build: {
-        src: 'calc/*.js',
+        src: ['<banner>','calc/*.js'],
         dest: 'calc.min.js'
-      }
+       }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-uglify');
